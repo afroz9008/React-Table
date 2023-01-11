@@ -1,0 +1,190 @@
+.react-table-main {
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    position: relative !important;
+}
+
+.react-table-main .zero-padding {
+    padding: 0;
+}
+
+.react-table-main .table {
+    position: relative;
+    font-size: 12px;
+    margin: 0;
+    width: 100%;
+    -webkit-border-horizontal-spacing: inherit;
+}
+
+.react-table-main .table thead {
+    text-align: left;
+}
+
+.react-table-main .table .header-row th:first-child {
+    padding-left: 24px;
+}
+
+.react-table-main .table .header-row th {
+    padding: 14px 4px;
+    vertical-align: middle;
+    font-weight: normal;
+    background-color: #f8f9fa;
+}
+
+.react-table-main .table .header-row th.collapse {
+    width: 0.0000000001%;
+    /* padding-right: 0 !important; */
+}
+
+.react-table-main .table .header-row th:last-child {
+    padding-right: 24px;
+}
+
+.button-progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+.progress-overlay {
+    background: hsla(0, 0%, 100%, .8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.progress-overlay span {
+    animation: loading 0.2s alternate;
+    font-size: 14px;
+}
+
+@keyframes loading {
+    0% {
+        transform: translate(0, -200%);
+    }
+
+    100% {
+        transform: translate(0, 0%);
+    }
+}
+
+.react-table-main .table .header-filter-row th:first-child {
+    padding-left: 24px;
+}
+
+.react-table-main .table .header-filter-row th {
+    padding: 0.5em 0.5em;
+    vertical-align: middle;
+}
+
+.react-table-main .table .header-filter-row th.collapse {
+    width: 0.0000000001% !important;
+}
+
+.react-table-main .table .header-filter-row th:last-child {
+    padding-right: 24px;
+}
+
+.react-table-main .table .header-filter-row .filter-textfield input {
+    padding: 5.5px 5.5px 5.5px 0px !important;
+}
+
+.react-table-main .table .header-filter-row .filter-textfield .MuiOutlinedInput-adornedEnd {
+    padding-right: 0;
+}
+
+.react-table-main .table .header-filter-row .filter-textfield .MuiInputAdornment-positionEnd {
+    margin-left: 0;
+    padding-bottom: 2px;
+}
+
+.react-table-main .table .header-filter-row .filter-selectfield .MuiSelect-select {
+    padding: 5.5px 30.5px 5.5px 7.5px;
+}
+
+.react-table-main .table .header-filter-row .filter-selectfield .MuiSelect-select:focus {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background: transparent
+}
+
+.react-table-main .table .data-row td:first-child {
+    padding-left: 24px;
+}
+
+.react-table-main .table .data-row td {
+    padding: 3px 4px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.react-table-main .table .data-row td.collapse {
+    width: 0.0000000001%;
+    /* padding-right: 0 !important; */
+}
+
+.react-table-main .table.-highlight tbody .data-row:hover {
+    background: #d2fefb !important;
+    font-weight: 500;
+}
+
+.react-table-main .table.-highlight tbody .data-row a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.react-table-main .table.-striped tbody .data-row:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.react-table-main .table .cursor-pointer {
+    cursor: pointer;
+}
+
+.react-table-main .table .data-row td:last-child {
+    padding-right: 24px;
+}
+
+.react-table-main .table .align-center {
+    text-align: center;
+}
+.react-table-main .table-pagination-footer {
+    border-bottom: none !important;
+}
+.react-table-main .table-pagination-footer .MuiTablePagination-selectLabel,
+.react-table-main .table-pagination-footer .MuiTablePagination-displayedRows {
+    margin: 0;
+}
+
+.react-table-main .sort-arrow {
+    margin-left: 5px;
+    color: #869195;
+}
+
+.no-data {
+    position: sticky;
+    height: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.no-data span {
+    background-color: hsla(0, 0%, 100%, .8);
+    box-shadow: 0px 0px 22px #5a585821;
+    margin: 0 14px;
+    padding: 14px;
+    white-space: nowrap;
+
+}
